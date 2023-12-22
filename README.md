@@ -1,0 +1,10 @@
+# kruzheva-ua.com
+- [Главная](https://doubley-dev.github.io/kruzheva-ua.com/index.html)
+- [Каталог (категория)](https://doubley-dev.github.io/kruzheva-ua.com/catalog.html)
+- [Каталог (категория - без баннера)](https://doubley-dev.github.io/kruzheva-ua.com/catalog-no-banner.html)
+- [Карточка товара](https://doubley-dev.github.io/kruzheva-ua.com/product-card.html)
+- [О нас](https://doubley-dev.github.io/kruzheva-ua.com/about.html)
+- [FAQ](https://doubley-dev.github.io/kruzheva-ua.com/faq.html)
+- [Отзывы](https://doubley-dev.github.io/kruzheva-ua.com/reviews.html)
+- [Контакты](https://doubley-dev.github.io/kruzheva-ua.com/contacts.html)
+- [Оплата и доставка](https://doubley-dev.github.io/kruzheva-ua.com/payment-and-delivery.html)

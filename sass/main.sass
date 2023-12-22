@@ -1,0 +1,1506 @@
+@import "app/sass/_vars"
+
+/* Категория */
+.category
+  // max-width: em(410)
+  width: 100%
+  margin-bottom: em(36)
+  &__preview
+  &__link
+    display: block
+    width: 100%
+    height: em(300)
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-background-size: cover
+    background-size: cover
+    position: relative
+    &::after
+      content: ''
+      display: block
+      background-image: url(../img/patterns/wholesale.svg)
+      position: absolute
+      top: em(21)
+      right: em(30)
+      bottom: em(18)
+      left:  em(30)
+      width: auto
+      height: auto
+      z-index: 1
+      -webkit-background-size: contain
+      background-size: contain
+      background-position: center center
+      background-repeat: no-repeat
+  &__title
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 0
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    padding: 0 3em
+    height: 4.5em
+    z-index: 2
+    color: #333333
+    text-transform: uppercase
+    text-align: center
+    font-family: -apple-system, "Palatino Linotype", sans-serif
+    font-weight: 700
+    font-size: em(26)
+    line-height: 1.2
+    background-color: rgba(255, 255, 255, .56)
+  &__info
+    padding: em(13) em(10)
+    display: block
+    width: 100%
+
+/* Продукт */
+.product
+  background-color: #ffffff
+  width: em(276)
+  height: em(513)
+  color: #333
+  font-family: -apple-system, "Source Serif Pro", sans-serif
+  position: relative
+  &__preview
+    height: em(276)
+    width: 100%
+    position: relative
+    overflow: hidden
+  &__taglist
+    position: absolute
+    left: em(13)
+    top: em(13)
+    z-index: 2
+    font-family: -apple-system, "Source Serif Pro", sans-serif
+    font-weight: 500
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__tag
+    padding: 0 em(15)
+    line-height: em(28)
+    margin-bottom: em(10)
+    font-size: em(13)
+    font-family: -apple-system, "Source Serif Pro", sans-serif
+    &:last-child
+      margin-bottom: 0
+    &-standart
+      color: #000
+      background-color: red
+    &-hit
+      color: #000
+      background-color: #FFB806
+      text-transform: uppercase
+  &__img
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    -webkit-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    z-index: 1
+  &__favorites
+    width: em(26)
+    height: em(26)
+    position: absolute
+    z-index: 2
+    right: em(14)
+    top: em(14)
+    -webkit-background-size: contain
+    background-size: contain
+    background-position: center center
+    background-repeat: no-repeat
+    background-image: url(../img/icons/favorites/disactivated.svg)
+  &__info
+    padding: em(25) em(15) 0
+    text-align: center
+  &__title
+    text-decoration: none
+    font-weight: 600
+    line-height: 1.4em
+    display: block
+    font-family: -apple-system, "Source Serif Pro", sans-serif
+    font-size: em(15)
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -moz-box
+    -moz-box-orient: vertical
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    line-clamp: 2
+    box-orient: vertical
+  &__vendorcode
+    color: rgb(168, 168, 168)
+    line-height: 1.4em
+    font-weight: 400
+    display: block
+  &__magnitude
+    display: block
+    margin-top: em(15)
+    font-size: em(14)
+  &__bottom
+    margin-top: em(25)
+    display: flex
+    justify-content: space-between
+    position: absolute
+    bottom: em(20)
+    left: 0
+    right: 0
+  &__price
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 600
+    span
+      font-weight: normal
+  &__old
+    font-size: em(11)
+    color: rgb(168, 168, 168)
+    margin-left: em(5)
+    text-decoration: line-through
+  &__current
+    font-size: em(14)
+  &__button
+    width: 50%
+    text-decoration: none
+    font-size: em(14)
+    font-weight: 500
+    &:hover
+      background: linear-gradient(90deg, rgba(186,148,62,1) 0%, rgba(236,172,32,1) 20%, rgba(186,148,62,1) 39%, rgba(249,244,180,1) 50%, rgba(186,148,62,1) 60%, rgba(236,172,32,1) 80%, rgba(186,148,62,1) 100%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      animation: shine 3s infinite
+      background-size: 200%
+      background-position: left
+  &:hover
+    .product__img
+      transform: scale(1.1)
+      -webkit-transform: scale(1.1)
+    .product__title
+      background: linear-gradient(90deg, rgba(186,148,62,1) 0%, rgba(236,172,32,1) 20%, rgba(186,148,62,1) 39%, rgba(249,244,180,1) 50%, rgba(186,148,62,1) 60%, rgba(236,172,32,1) 80%, rgba(186,148,62,1) 100%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      animation: shine 3s infinite
+      background-size: 200%
+      background-position: left
+
+/* Главная страница. Баннер */
+.index-banner
+  padding: em(53) em(70) em(415)
+  position: relative
+  .page-title
+    width: 100%
+    text-transform: uppercase
+    line-height: 1.2em
+  .info
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-top: em(24)
+    .page-description
+      width: em(641)
+    .page-title
+      text-align: right
+
+  .banner
+    height: em(360)
+    display: block
+    width: 100%
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    &__logo
+      z-index: 1
+      display: block
+      width: em(194)
+      position: absolute
+      left: em(230)
+      bottom: em(104)
+    &__next
+      width: em(50)
+      height: em(50)
+      display: block
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      -webkit-transform: translateX(-50%)
+      z-index: 2
+      background-color: #FFB806
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-image: url(../img/icons/arrow-down.svg)
+        background-repeat: no-repeat
+        background-position: center center
+        -webkit-background-size: auto em(22)
+        background-size: auto em(22)
+        z-index: 3
+
+
+/* Главная страница. Каталог */
+.index-catalog
+  padding: em(100) em(80) em(50)
+  .line
+    height: em(1)
+    width: 100%
+    background-color: #636363
+    margin-bottom: em(35)
+  .info
+    margin-bottom: em(35)
+    .small-title
+      margin-bottom: em(10)
+
+
+/* Преимущества */
+.page-advantages
+  padding: em(50) em(80)
+  .small-title
+    width: 100%
+    text-align: center
+  .line
+    height: em(1)
+    background-color: #636363
+    display: block
+    width: 100%
+    margin-top: em(36)
+    margin-bottom: em(35)
+
+.advantages
+  display: flex
+  justify-content: space-between
+  &__item
+    width: 30%
+    position: relative
+    &::before
+      content: ''
+      height: 1px
+      width: em(210)
+      background-image: url(../img/advantages/line.svg)
+      position: absolute
+      top: em(54)
+      margin-left: -34%
+    &:first-child
+      &::before
+        display: none
+  &__icon
+    display: block
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-background-size: contain
+    background-size: contain
+    width: em(108)
+    height: em(108)
+    margin-left: auto
+    margin-right: auto
+  &__title
+    display: block
+    text-align: center
+    margin-top: em(20)
+
+/* Роспрадажа */
+.page-sale
+  padding: em(50) em(80)
+.sale
+  background-color: #fff
+  box-shadow: 0 4px 21px 0 rgba(0,0,0,.7)
+  border-radius: em(15)
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__left
+    width: 50%
+    padding-left: em(64)
+    padding-right: em(70)
+  &__tag
+    color: #777777
+  &__title
+    color: #222222
+    margin-top: em(22)
+    margin-bottom: em(5)
+    text-transform: uppercase
+  &__description
+    color: #222222
+    margin-bottom: em(32)
+  .button
+    display: inline-flex
+    padding-left: em(35)
+    padding-right: em(35)
+    width: auto
+    &:hover
+      position: relative
+      z-index: 2
+  &__img
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-background-size: cover
+    background-size: cover
+    width: 50%
+    height: em(440)
+
+/* Главная страница. Новинки */
+.index-newitems
+  padding: em(50) em(80)
+  .line
+    height: em(1)
+    width: 100%
+    background-color: #636363
+    margin-bottom: em(35)
+  .info
+    max-width: 23em
+    width: 100%
+    .small-title
+      margin-bottom: em(10)
+    .small-list
+  .button
+    display: flex
+    width: em(167)
+    margin-left: auto
+    top: 100%
+    margin-top: -2.8125em
+  .line
+    margin-top: em(35)
+    margin-bottom: em(35)
+
+/* С нами на связи */
+.page-callback
+  padding: em(50) em(175) em(50)
+  .callback
+    max-width: em(414)
+    text-align: center
+    &__title
+      margin-bottom: em(16)
+    input
+      margin-bottom: em(22)
+    .button
+      margin-top: em(40)
+      max-width: em(198)
+      margin-left: auto
+      margin-right: auto
+  .photo
+    max-width: em(500)
+    width: 100%
+    height: em(440)
+    display: block
+    margin-left: auto
+    -webkit-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+/* Секция с текстом */
+.page-text
+  padding: em(50) em(80) em(100)
+  position: relative
+  .description
+    height: 64vh
+    overflow: hidden
+
+.page-text-more
+  width: 100%
+  background-color: #34322C
+  margin-bottom: 0
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  height: 30vh
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+  padding: 0 em(80)
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 100%
+    height: 30vh
+    background: linear-gradient(360deg, #34322C 25%, rgba(52, 50, 44, 0) 111.9%)
+    z-index: 2
+  .more
+    text-align: right
+    position: relative
+    z-index: 2
+    &__link
+      display: inline-flex
+      align-items: center
+      justify-content: flex-end
+      text-decoration: none
+      font-size: em(18)
+      font-family: -apple-system, "Gilroy", sans-serif
+      color: #A6A6A6
+    &__icon
+      width: em(23)
+      height: em(10)
+      margin-left: em(12)
+      background-image: url(../img/icons/arrow-right-gray.svg)
+      background-repeat: no-repeat
+      background-position: right center
+      background-position: right center
+
+/* Хлебные крошки каталог */
+.page-breadcrumbs
+  padding: em(53) em(80) em(35)
+  .breadcrumbs
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-wrap: wrap
+    &__item
+      display: block
+      padding-left: em(34)
+      position: relative
+      &:first-child
+        padding-left: 0
+        &::before
+          display: none
+      &:last-child
+        .breadcrumbs__link
+          font-weight: 700
+      &::before
+        content: '/'
+        font-size: em(15)
+        color: #ffffff
+        font-family: -apple-system, "Gilroy", sans-serif
+        display: block
+        position: absolute
+        left: em(15)
+    &__link
+      text-decoration: none
+      font-size: em(15)
+      color: #ffffff
+      font-family: -apple-system, "Gilroy", sans-serif
+    &__home
+      width: em(15)
+      height: em(18)
+      display: block
+      background-image: url(../img/icons/home.svg)
+      background-repeat: no-repeat
+      -webkit-background-size: contain
+      background-size: contain
+      background-position: left center
+      margin-top: em(-2)
+
+/* Каталог */
+.page-catalog
+  padding: 0 em(80) em(50)
+  .normal-title
+    text-transform: none
+  .banner
+    margin-top: em(35)
+    width: 100%
+    -webkit-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center bottom
+    height: em(237)
+    display: flex
+    align-items: center
+    padding: 0 em(92)
+    position: relative
+    &::after
+      content: ''
+      display: block
+      background-color: rgba(0,0,0,.3)
+      box-shadow: 5px 11px 13px 0 rgba(124, 124, 124, 0.11)
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      z-index: 1
+    &__inner
+      position: relative
+      z-index: 2
+    &__title
+      text-transform: none
+      font-family: -apple-system, "Montserrat", sans-serif
+    &__info
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: em(300)
+      margin-left: em(80)
+    &__text
+      font-family: -apple-system, "Montserrat", sans-serif
+      font-weight: 500
+      font-size: em(30)
+      text-align: right
+      width: 50%
+      padding-right: em(6)
+    &__discount
+      font-family: -apple-system, "Montserrat", sans-serif
+      font-size: em(64)
+      line-height: 1.2em
+      font-weight: 700
+      color: #ffffff
+      width: 50%
+      padding-left: em(3)
+  .result
+    display: block
+    width: 100%
+    padding: em(37) 0
+    color: #A0A0A0
+    font-family: -apple-system, "Roboto", sans-serif
+    font-weight: 300
+    font-size: em(13)
+  .sort
+    padding: em(11) em(28)
+    width: 100%
+    border-top: em(1) solid #D8DCE6
+    border-bottom: em(1) solid #D8DCE6
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: em(35)
+    &__left
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    &__text
+      font-family: -apple-system, "Gilroy", sans-serif
+      font-size: em(13)
+      color: #ffffff
+      margin-right: em(9)
+    &__list
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      flex-wrap: wrap
+    &__item
+      display: block
+    &__link
+      font-family: -apple-system, "Gilroy", sans-serif
+      font-size: em(13)
+      color: #ffffff
+      text-decoration: none
+      padding: em(9) em(28)
+      display: block
+      text-transform: lowercase
+      &-active
+        background-color: #3B3933
+    &__right
+      display: flex
+      justify-content: flex-end
+      align-items: center
+    &__control
+      margin-left: em(5)
+      svg
+        width: auto
+        height: em(21)
+        display: block
+        fill: #fff
+      &-active
+        svg
+          fill: #A0A0A0
+
+  .product
+    margin-bottom: em(24)
+
+  .pagenavigation
+    margin-top: em(11)
+    display: flex
+    width: 100%
+    justify-content: center
+    flex-wrap: wrap
+    &__more
+      text-decoration: none
+      font-size: em(18)
+      font-family: -apple-system, "Gilroy", sans-serif
+      color: #ffffff
+      display: block
+      line-height: 1em
+      padding: em(12) em(53)
+      border: em(1) solid #BDBDBD
+    &__list
+      display: flex
+      justify-content: center
+      width: 100%
+      margin-top: em(19)
+    &__item
+      display: block
+      padding: 0 em(8)
+    &__link
+      text-decoration: none
+      font-family: -apple-system, "Roboto", sans-serif
+      font-size: em(14)
+      color: #727272
+      &-active
+        color: #ffffff
+
+/* Фильтр */
+.filter
+  &__title
+    font-size: em(20)
+    font-weight: 700
+    color: #ffffff
+    line-height: 1.2em
+    font-family: -apple-system, "Palatino Linotype", sans-serif
+    text-transform: uppercase
+    text-decoration: none
+  &__toggle
+  &__label
+    padding-left: em(30)
+    font-family: -apple-system, "Gilroy", sans-serif
+    color: #ffffff
+    display: block
+    position: relative
+    line-height: 1.2em
+    cursor: pointer
+    &::before
+      content: ''
+      width: em(20)
+      height: em(20)
+      border: 1px solid #BDBDBD
+      border-radius: em(3)
+      background-color: #3B3933
+      display: block
+      position: absolute
+      left: 0
+      top: em(-1)
+  input[type="checkbox"]
+    display: none
+  input[type="checkbox"]:checked + label::before
+    background-color: #BDBDBD
+    border-color: #BDBDBD
+  &__current
+    border: em(1) solid #636363
+    background-color: #2D2A24
+    margin-bottom: em(20)
+    padding: em(21) em(20) em(13) em(43)
+    .filter__list
+      margin-top: em(11)
+      display: flex
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 100%
+      margin-bottom: em(32)
+    .filter__item
+      padding: em(5) em(25) em(5) em(9)
+      display: block
+      background-color: #484640
+      margin-right: em(5)
+      margin-bottom: em(5)
+      font-family: -apple-system, "Gilroy", sans-serif
+      position: relative
+    .filter__remove
+      position: absolute
+      width: em(25)
+      top: 0
+      bottom: 0
+      background-repeat: no-repeat
+      background-position: center center
+      background-image: url(../img/icons/little-close.svg)
+      -webkit-background-size: em(7) auto
+      background-size: em(7) auto
+    .filter__clear
+      font-family: -apple-system, "Gilroy", sans-serif
+      text-decoration: underline
+      display: inline-block
+      &:hover
+        text-decoration: none
+  &__content
+    border: em(1) solid #636363
+    background-color: #2D2A24
+    margin-bottom: em(20)
+    padding: em(18) em(21) em(49)
+  &__group
+    margin-bottom: em(10)
+    .filter__toggle
+      display: block
+      width: 100%
+      padding: em(13) em(52) em(13) em(27)
+      border: em(1) solid #636363
+      position: relative
+      &::after
+        content: ''
+        display: block
+        background-image: url(../img/icons/filter-open.svg)
+        width: em(16)
+        height: em(9)
+        position: absolute
+        right: em(16)
+        top: 50%
+        margin-top: em(-4.5)
+        background-repeat: no-repeat
+        background-position: center center
+        -webkit-background-size: contain
+        background-size: contain
+        transform: rotate(-90deg)
+        -webkit-transform: rotate(-90deg)
+      &-active
+        &::after
+          transform: rotate(0)
+          -webkit-transform: rotate(0)
+          right: em(18)
+    .filter__list
+      padding: em(11) 0 em(36) em(27)
+    .filter__item
+      margin-bottom: em(12)
+  &__range
+    margin-top: em(30)
+    padding-left: em(38)
+    padding-right: em(38)
+    .filter__price
+      margin-top: em(30)
+      padding-right: em(20)
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      position: relative
+    .filter__from
+      width: 50%
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      padding-right: em(11)
+      span
+        color: #ffffff
+        font-family: -apple-system, "Gilroy", sans-serif
+        line-height: 1.2em
+        display: block
+        margin-right: em(5)
+    .filter__to
+      width: 50%
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      padding-left: em(11)
+      span
+        color: #ffffff
+        font-family: -apple-system, "Gilroy", sans-serif
+        line-height: 1.2em
+        display: block
+        margin-right: em(5)
+    .filter__input
+      width: 100%
+      height: em(30)
+      border: em(1) solid #636363
+      line-height: em(28)
+      text-align: center
+      padding: 0
+      &::-webkit-outer-spin-button
+        -webkit-appearance: none
+        margin: 0
+      &::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
+    .filter__currency
+      position: absolute
+      right: 0
+      bottom: em(5)
+  .diapason
+    padding: em(11) em(27) em(36) em(27)
+    &__text
+      color: #ffffff
+      font-family: -apple-system, "Gilroy", sans-serif
+      display: block
+      margin-top: em(10)
+    &__slider
+      -webkit-appearance: none
+      width: 100%
+      height: em(30)
+      padding: 0
+      margin: 0
+      background: #3B3933
+      outline: none
+      opacity: 0.7
+      -webkit-transition: .2s
+      transition: opacity .2s
+      border: em(1) solid #636363
+      &:hover
+        opacity: 1
+      &::-webkit-slider-thumb
+        -webkit-appearance: none
+        appearance: none
+        width: em(25)
+        height: em(25)
+        background: #fff
+        cursor: pointer
+      &::-moz-range-thumb
+        width: em(25)
+        height: em(25)
+        background: #4CAF50
+        cursor: pointer
+
+/* Отзывы */
+.page-reviews
+  padding: em(50) em(80)
+  .line
+    height: em(1)
+    width: 100%
+    background-color: #636363
+    margin-bottom: em(35)
+  .info
+    max-width: 23em
+    width: 100%
+    .small-title
+      margin-bottom: em(10)
+    .small-list
+  .button
+    display: flex
+    width: em(167)
+    margin-left: auto
+    top: 100%
+    margin-top: -2.8125em
+  .line
+    margin-top: em(35)
+    margin-bottom: em(35)
+  .reviews
+    width: auto
+    margin-left: em(-10)
+    margin-right: em(-10)
+    &__item
+      padding: 0 em(10)
+    &__link
+      display: block
+    &__img
+      display: block
+      width: 100%
+      height: auto
+
+/* Детальная страница */
+.page-card
+  padding: 0 em(80)
+  .slider
+    &__main
+      margin-bottom: em(25)
+      .slider__item
+      .slider__img
+        display: block
+        width: 100%
+        padding-top: 100%
+        -webkit-background-size: cover
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+    &__additional
+      width: auto
+      margin-left: em(-12.5)
+      margin-right: em(-12.5)
+      .slider__item
+        padding-left: em(12.5)
+        padding-right: em(12.5)
+      .slider__img
+        display: block
+        width: 100%
+        padding-top: 100%
+        -webkit-background-size: cover
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+      .slick-current
+        .slider__img
+          opacity: .6
+    .slick-prev
+      left: em(20)
+    .slick-next
+      right: em(20)
+  .tabs
+    margin-top: em(60)
+    &__list
+      display: flex
+      justify-content: center
+      align-items: center
+      border-bottom: em(1) solid #fff
+    &__item
+      display: block
+    &__link
+      text-decoration: none
+      display: block
+      padding: em(20) em(22)
+      text-transform: uppercase
+      font-size: em(12)
+      position: relative
+      &-active
+        &::after
+          content: ''
+          display: block
+          position: absolute
+          height: em(4)
+          background-color: #fff
+          bottom: em(-2)
+          left: 0
+          right: 0
+          width: 100%
+          z-index: 1
+    &__content
+      padding-top: em(40)
+    &__info
+  .table
+    border-left: em(1) solid #fff
+    border-right: em(1) solid #fff
+    border-top: em(1) solid #fff
+    &__row
+      display: flex
+      justify-content: space-between
+      border-bottom: em(1) solid #fff
+      &:nth-child(even)
+        background-color: #a8a8a8
+    &__left
+      width: 50%
+      font-size: em(15)
+      padding: em(11) em(16)
+      display: block
+      border-right: em(1) solid #fff
+    &__right
+      width: 50%
+      font-size: em(15)
+      padding: em(11) em(16)
+      display: block
+
+.card
+  position: sticky
+  top: em(20)
+  .normal-title
+    text-transform: none
+    line-height: 1.2em
+    margin-bottom: em(10)
+  &__price
+    display: flex
+    width: 100%
+    justify-content: flex-start
+    align-items: center
+    margin-top: em(10)
+    margin-bottom: em(30)
+    .old
+      color: rgb(240, 202, 149)
+      text-decoration: line-through
+      opacity: .5
+      font-size: em(20)
+      margin-right: em(10)
+    .current
+      color: rgb(240, 202, 149)
+      font-size: em(20)
+  &__magnitude
+    color: rgb(168, 168, 168)
+    margin-bottom: em(35)
+    display: block
+  &__line
+    width: 100%
+    height: em(1)
+    display: block
+    background-color: #ffffff
+  &__wholesale
+    display: flex
+    justify-content: flex-start
+    width: 100%
+    color: #ffffff
+    margin-top: em(40)
+    .item
+      border: em(1) solid #ccc
+      border-radius: em(5)
+      padding: 0 em(10) em(5)
+      display: block
+      margin-left: em(10)
+      &:first-child
+        margin-left: 0
+      &-active
+        border: em(1) solid #fdde8e
+    .price
+      font-size: em(18)
+      line-height: em(28)
+    .quantity
+      font-size: em(13)
+      line-height: em(25)
+  &__panel
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-top: em(15)
+    margin-bottom: em(35)
+    .quantity
+      padding-left: em(50)
+      padding-right: em(50)
+      position: relative
+      margin-right: em(65)
+    .input
+      border: none
+      padding: 0
+      height: em(50)
+      width: em(50)
+      background-color: #3B3933
+      &::-webkit-outer-spin-button
+        -webkit-appearance: none
+      &::-webkit-inner-spin-button
+        -webkit-appearance: none
+    .btn
+      text-decoration: none
+      width: em(50)
+      height: em(50)
+      position: absolute
+      z-index: 1
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #3B3933
+    .minus
+      left: 0
+      top: 0
+    .plus
+      right: 0
+      top: 0
+  &__info
+    margin-top: em(35)
+    .list
+    .item
+      text-transform: uppercase
+      display: block
+      width: 100%
+      margin-bottom: em(15)
+      font-size: em(13)
+      font-weight: 700
+      color: rgb(168, 168, 168, .7)
+      .property
+        color: rgb(168, 168, 168)
+      a
+        text-decoration: none
+        color: rgba(168, 168, 168, .7)
+        &:hover
+          opacity: 1
+          color: #ffffff
+
+/* Баннер текстовых страниц */
+.page-banner
+  padding: 0 em(80)
+  height: em(300)
+  display: flex
+  align-items: center
+  width: 100%
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  margin-bottom: em(50)
+  .banner
+    text-align: center
+    position: relative
+    &__logo
+      display: block
+      position: absolute
+      left: em(50)
+      top: 50%
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      width: em(194)
+      height: auto
+  .page-title
+  .banner-breadcrumbs
+    display: flex
+    justify-content: center
+    margin-top: em(15)
+    &__item
+      padding-left: em(20)
+      position: relative
+      &::before
+        content: '/'
+        display: block
+        position: absolute
+        left: em(2)
+        bottom: 0
+        font-size: em(25)
+        font-family: -apple-system, "Gilroy", sans-serif
+      &:first-child
+        padding-left: 0
+        &::before
+          display: none
+    &__link
+      text-decoration: none
+      font-size: em(25)
+      font-family: -apple-system, "Gilroy", sans-serif
+      font-weight: 400
+
+.page-story
+  padding: em(50) em(80)
+  .story-photo
+    max-width: em(500)
+    height: em(440)
+    display: block
+    -webkit-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    margin-bottom: em(35)
+  .story-info
+    margin-bottom: em(35)
+    max-width: em(450)
+    .button
+      max-width: em(180)
+      margin-top: em(20)
+    svg
+      display: block
+      margin: em(10) 0
+    &-bottom
+      margin-top: em(65)
+      margin-bottom: 0
+      max-width: none
+
+.page-examples
+  padding: em(50) em(80)
+  .info
+    max-width: em(550)
+    .section-title
+      text-transform: none
+    .button
+      margin-top: em(35)
+      max-width: em(218)
+  .photos
+    display: flex
+    justify-content: flex-start
+    &__left
+      width: 50%
+      height: em(440)
+      background-repeat: no-repeat
+      -webkit-background-size: cover
+      background-size: cover
+    &__right
+      width: 50%
+      display: flex
+      justify-content: flex-start
+      flex-wrap: wrap
+    &__item
+      width: 50%
+      height: em(220)
+      background-repeat: no-repeat
+      -webkit-background-size: cover
+      background-size: cover
+
+.page-guarantees
+  padding: em(50) em(80) em(100)
+  .line
+    height: em(1)
+    background-color: #636363
+    display: block
+    width: 100%
+    margin-top: em(36)
+    margin-bottom: em(35)
+  .guarantees
+    &__item
+      padding-left: em(143)
+      position: relative
+      min-height: em(108)
+      margin-bottom: em(35)
+      &:last-child
+        margin-bottom: 0
+    &__count
+      position: absolute
+      left: 0
+      width: em(108)
+      height: em(108)
+      display: block
+      line-height: 100%
+      text-align: center
+      border-radius: 50%
+      -webkit-border-radius: 50%
+      background: linear-gradient(180deg, #E8A961 0%, #F8E7C5 46.88%, #F3DBAD 100%)
+      span
+        display: block
+        position: absolute
+        left: em(1)
+        right: em(1)
+        top: em(1)
+        bottom: em(1)
+        width: auto
+        height: auto
+        background-color: #34322C
+        z-index: 1
+        border-radius: 50%
+        -webkit-border-radius: 50%
+        font-size: em(55)
+        color: #F4DCAF
+        line-height: 1.7em
+        font-family: -apple-system, "Palatino Linotype", sans-serif
+    &__title
+      font-size: em(35)
+      font-family: -apple-system, "Gilroy", sans-serif
+      line-height: 1.2
+      display: block
+      font-weight: 700
+      color: #ffffff
+    &__description
+      margin-top: em(5)
+      font-size:  em(24)
+      font-family: -apple-system, "Gilroy", sans-serif
+      line-height: 1.2
+      display: block
+      font-weight: 400
+      color: #ffffff
+
+.page-faq
+  padding: em(50) em(297)
+  .page-title
+    margin-bottom: em(10)
+    text-align: center
+  .faq
+    &__item
+      display: block
+      width: 100%
+      border-bottom: em(1) solid #636363
+    &__link
+      width: 100%
+      padding: em(20) em(33 + 15 + 33) em(20) em(33)
+      position: relative
+      text-decoration: none
+      display: block
+    &__title
+      color: #ffffff
+      font-size: em(24)
+      font-family: -apple-system, "Gilroy", sans-serif
+      display: block
+    &__chart
+      display: block
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      width: 3.4em
+      text-align: center
+      color: #ffffff
+      font-size: em(24)
+      font-family: -apple-system, "Gilroy", sans-serif
+    &__content
+      padding: em(15) em(33) em(30)
+      display: none
+
+.section-reviews
+  padding: em(50) em(80) em(100) em(80)
+  .description
+    max-width: em(630)
+  .buttons
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    margin-top: em(40)
+  .button
+    width: em(174)
+    margin-left: em(40)
+    &:first-child
+      margin-left: 0
+    &__icon
+      width: em(24)
+      height: em(24)
+  .slider-reviews
+    max-width: em(500)
+    margin-left: auto
+    margin-right: auto
+    &__item
+    &__img
+      display: block
+      width: 100%
+      height: auto
+
+.page-contacts
+  padding: em(50) em(80)
+  .info
+    max-width: em(523)
+    .normal-title
+    .description
+      margin-top: em(20)
+      margin-bottom: em(25)
+    .button
+      width: em(196)
+      &__icon
+        width: em(24)
+        height: em(24)
+
+  .contacts
+    &__item
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      margin-bottom: em(35)
+      &:last-child
+        margin-bottom: 0
+    &__icon
+      display: block
+      width: em(108)
+      height: em(108)
+      background-repeat: no-repeat
+      -webkit-background-size: contain
+      background-size: contain
+      background-position: left center
+    &__info
+      display: block
+      padding-left: em(20)
+      font-family: -apple-system, "Gilroy", sans-serif
+      font-size: em(24)
+      line-height: 1.4em
+      font-weight: 400
+      color: #ffffff
+      a
+        color: #E6A961
+        font-weight: 700
+        text-decoration: none
+
+.page-delivery
+  padding: em(50) em(80)
+  .section-title
+    text-transform: none
+  .small-title
+    max-width: 17.5em
+    margin-left: auto
+    display: block
+  .line
+    height: 0.0625em
+    background-color: #636363
+    display: block
+    width: 100%
+    margin-top: 2.25em
+    margin-bottom: 2.1875em
+
+  .delivery
+    &__icon
+      display: block
+      height: em(75)
+      width: 100%
+      background-repeat: no-repeat
+      background-position: left top
+      -webkit-background-size: contain
+      background-size: contain
+      margin-bottom: em(20)
+    &__info
+      font-weight: 700
+      max-width: 23em
+
+.page-payment
+  padding: em(50) em(80)
+  .section-title
+    text-transform: none
+  .small-title
+    max-width: 17.5em
+    margin-left: auto
+    display: block
+  .line
+    height: 0.0625em
+    background-color: #636363
+    display: block
+    width: 100%
+    margin-top: 2.25em
+    margin-bottom: 2.1875em
+
+  .payment
+    &__icon
+      display: block
+      width: em(108)
+      height: em(108)
+      -webkit-background-size: contain
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: left top
+      margin-bottom: em(20)
+    &__info
+    &__title
+      font-family: -apple-system, "Gilroy", sans-serif
+      font-size: em(35)
+      font-weight: 700
+      display: block
+    &__description
+      margin-top: em(5)
+
+.page-feedback
+  padding: em(50) em(150) em(50)
+  .feedback
+    max-width: em(460)
+    text-align: center
+    &__title
+      margin-bottom: em(25)
+      font-family: -apple-system, "Palatino Linotype", sans-serif
+    input[type="text"]
+      margin-bottom: em(20)
+      border: none
+      height: em(50)
+      font-size: em(16)
+      line-height: em(50)
+      padding: 0 em(16)
+      text-align: left
+      font-family: -apple-system, "Gilroy", sans-serif
+      font-weight: 400
+      background-color: rgba(#fff, .15)
+      &::placeholder
+        opacity: 1
+        color: #AAACB9
+    textarea
+      margin-bottom: em(20)
+      border: none
+      width: 100%
+      height: em(120)
+      font-size: em(16)
+      padding: em(16) em(16)
+      text-align: left
+      font-family: -apple-system, "Gilroy", sans-serif
+      font-weight: 400
+      background-color: rgba(#fff, .15)
+      resize: none
+      &::placeholder
+        opacity: 1
+        color: #AAACB9
+    .file
+      position: relative
+      margin-bottom: em(20)
+      input[type="file"]
+        opacity: 0
+        visibility: hidden
+        position: absolute
+        padding: 0
+        border: none
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: auto
+        height: auto
+      &__label
+        display: block
+        width: 100%
+        border: none
+        height: em(50)
+        font-size: em(16)
+        line-height: em(50)
+        padding: 0 em(16)
+        text-align: left
+        font-family: -apple-system, "Gilroy", sans-serif
+        font-weight: 400
+        background-color: rgba(#fff, .15)
+        cursor: pointer
+        color: #AAACB9
+    .button
+      margin-top: 0
+      max-width: em(198)
+      margin-left: auto
+      margin-right: auto
+  .photo
+    max-width: em(500)
+    width: 100%
+    height: em(440)
+    display: block
+    margin-left: auto
+    -webkit-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center

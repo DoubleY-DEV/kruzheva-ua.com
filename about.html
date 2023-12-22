@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Про нас</title>
+
+    <!-- Мета теги -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <!-- Подключение шрифтов -->
+    <link rel="stylesheet" href="fonts/Manrope/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="fonts/PalatinoLinotype/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Literata/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Montserrat/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
+    <link rel="stylesheet" href="fonts/SourceSerifPro/stylesheet.css">
+    <link href="https://db.onlinewebfonts.com/c/0e663589b576e1e340e4fc28ea99626c?family=Sitka+Small+Bold" rel="stylesheet">
+
+    <!-- Подключение плагинов (стили) -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css?v5.0.2">
+    <link rel="stylesheet" href="libs/slick/slick.css?v1.8.1">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <!-- Подключение стилей сайта -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+<!-- Динамический размер шрифта (desktop) -->
+<script type="text/javascript">
+    if(window.innerWidth > 767) {
+        var proportion = 1440/16;
+        function resizeFont() { document.body.style.fontSize = parseInt(document.body.offsetWidth/proportion) + 'px' }
+        onload = onresize = resizeFont;
+        if (document.addEventListener) document.addEventListener("DOMContentLoaded", resizeFont, null);
+    }
+</script>
+
+<!-- <img alt="" data-src="/local/templates/site/img/logo.webp" class="logo-img"> -->
+<!-- <div class="port-item-new" data-bg="/upload/iblock/faf1/m01qfgi7ld3qnbfa0eglxadz7j0lmf5x.webp"> -->
+
+
+<!-- Мобильное меню -->
+<div class="mobmenu" style="display: none;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="activity">
+                    <ul class="shop">
+                        <li class="shop__item">
+                            <a href="#" class="shop__link">
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.0526 4.6123V4.61241V8.0238C19.0526 8.16722 18.8937 8.39852 18.5467 8.39852C18.1995 8.39852 18.0409 8.16737 18.0409 8.0238V4.98659C18.0409 2.78285 16.4173 1.06365 14.36 1.06365C12.3026 1.06365 10.6796 2.78296 10.6796 4.98659V8.0238C10.6796 8.16722 10.5207 8.39852 10.1738 8.39852C9.82687 8.39852 9.66797 8.16722 9.66797 8.0238V4.61241C9.66797 2.46192 11.7058 0.59668 14.36 0.59668C17.0154 0.59668 19.053 2.46199 19.0526 4.6123Z" stroke="#BDBDBD"/>
+                                    <path d="M22.1329 7.3207V6.71436H27.0085L23.145 21.7964C22.9959 22.323 22.3522 22.818 21.7325 22.818H6.97842C6.35924 22.818 5.71503 22.3224 5.56715 21.7969L1.70246 6.71436H6.6455V7.3207C6.6455 8.96437 8.02969 10.2461 9.66536 10.2461C11.301 10.2461 12.6852 8.96437 12.6852 7.3207V6.71436H16.0932V7.3207C16.0932 8.96437 17.4774 10.2461 19.1131 10.2461C20.7487 10.2461 22.1329 8.96437 22.1329 7.3207Z" stroke="#BDBDBD" stroke-width="1.5"/>
+                                </svg>
+                                <span class="shop__count">
+									5
+								</span>
+                            </a>
+                        </li>
+                        <li class="shop__item">
+                            <a href="#" class="shop__link">
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.1662 21.3166L12.1651 21.3157C8.67345 18.3257 5.8376 15.8927 3.8659 13.6148C1.90084 11.3445 0.884766 9.32855 0.884766 7.18643C0.884766 3.70215 3.774 0.924805 7.55977 0.924805C9.69754 0.924805 11.7505 1.86834 13.0797 3.33091L13.6348 3.94158L14.1898 3.33091C15.5191 1.86834 17.572 0.924805 19.7098 0.924805C23.4955 0.924805 26.3848 3.70215 26.3848 7.18643C26.3848 9.32855 25.3687 11.3445 23.4036 13.6148C21.4319 15.8927 18.5961 18.3257 15.1044 21.3157L15.1033 21.3166L13.6348 22.5791L12.1662 21.3166Z" stroke="#BDBDBD" stroke-width="1.5"/>
+                                </svg>
+                                <span class="shop__count">
+									24
+								</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="language">
+                        <a href="#" class="language__current">
+                            UA
+                        </a>
+                        <ul class="language__list">
+                            <li class="language__item">
+                                <a href="#" class="language__link">
+                                    UA
+                                </a>
+                            </li>
+                            <li class="language__item">
+                                <a href="#" class="language__link">
+                                    RU
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="logo">
+                    <a href="index.html" class="logo__link">
+                        <img class="logo__img" src="img/header-logo.svg" alt="Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="navigation">
+                    <li class="navigation__item navigation__item-sub">
+                        <a href="javascript:void(0);" class="navigation__link">
+                            Каталог
+                        </a>
+                        <div class="subnavigation" style="display: none;">
+                            <ul class="subnavigation__list">
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Стрейчеве
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Макраме
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Шантілії
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Вишивка на сітці
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Бавовняне (лляне)
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Мереживо на вагу, комплекти
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Знижки на ОПТ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            Акційні
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            Відгуки
+                        </a>
+                    </li>
+                    <li class="navigation__item navigation__item-sub">
+                        <a href="javascript:void(0);" class="navigation__link">
+                            Контакти
+                        </a>
+                        <div class="subnavigation" style="display: none;">
+                            <ul class="subnavigation__list">
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Категорія
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Категорія
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Шапка сайта -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-3 col-6">
+                <div class="logo">
+                    <a href="index.html" class="logo__link">
+                        <img class="logo__img" src="img/header-logo.svg" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="d-md-none d-md-block col-6">
+                <div class="burger">
+                    <a href="javascript:void(0);" class="burger__link"></a>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-6">
+                <ul class="navigation">
+                    <li class="navigation__item navigation__item-sub">
+                        <a href="#" class="navigation__link">
+                            Каталог
+                        </a>
+                        <div class="subnavigation" style="display: none;">
+                            <ul class="subnavigation__list">
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Стрейчеве
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Макраме
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Шантілії
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Вишивка на сітці
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Бавовняне (лляне)
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Мереживо на вагу, комплекти
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="wholesale">
+                                <a href="#" class="wholesale__link" style="background-image: url(img/products/wholesale.webp);">
+										<span class="wholesale__text">
+											Знижки на ОПТ
+										</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            Акційні
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            Відгуки
+                        </a>
+                    </li>
+                    <li class="navigation__item navigation__item-sub">
+                        <a href="#" class="navigation__link">
+                            Контакти
+                        </a>
+                        <div class="subnavigation subnavigation-list" style="display: none;">
+                            <ul class="subnavigation__list">
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Категорія
+                                    </a>
+                                </li>
+                                <li class="subnavigation__item">
+                                    <a href="#" class="subnavigation__link">
+                                        Категорія
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-md-block col-md-3">
+                <div class="activity">
+                    <ul class="shop">
+                        <li class="shop__item">
+                            <a href="#" class="shop__link">
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.0526 4.6123V4.61241V8.0238C19.0526 8.16722 18.8937 8.39852 18.5467 8.39852C18.1995 8.39852 18.0409 8.16737 18.0409 8.0238V4.98659C18.0409 2.78285 16.4173 1.06365 14.36 1.06365C12.3026 1.06365 10.6796 2.78296 10.6796 4.98659V8.0238C10.6796 8.16722 10.5207 8.39852 10.1738 8.39852C9.82687 8.39852 9.66797 8.16722 9.66797 8.0238V4.61241C9.66797 2.46192 11.7058 0.59668 14.36 0.59668C17.0154 0.59668 19.053 2.46199 19.0526 4.6123Z" stroke="#BDBDBD"/>
+                                    <path d="M22.1329 7.3207V6.71436H27.0085L23.145 21.7964C22.9959 22.323 22.3522 22.818 21.7325 22.818H6.97842C6.35924 22.818 5.71503 22.3224 5.56715 21.7969L1.70246 6.71436H6.6455V7.3207C6.6455 8.96437 8.02969 10.2461 9.66536 10.2461C11.301 10.2461 12.6852 8.96437 12.6852 7.3207V6.71436H16.0932V7.3207C16.0932 8.96437 17.4774 10.2461 19.1131 10.2461C20.7487 10.2461 22.1329 8.96437 22.1329 7.3207Z" stroke="#BDBDBD" stroke-width="1.5"/>
+                                </svg>
+                                <span class="shop__count">
+									5
+								</span>
+                            </a>
+                        </li>
+                        <li class="shop__item">
+                            <a href="#" class="shop__link">
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.1662 21.3166L12.1651 21.3157C8.67345 18.3257 5.8376 15.8927 3.8659 13.6148C1.90084 11.3445 0.884766 9.32855 0.884766 7.18643C0.884766 3.70215 3.774 0.924805 7.55977 0.924805C9.69754 0.924805 11.7505 1.86834 13.0797 3.33091L13.6348 3.94158L14.1898 3.33091C15.5191 1.86834 17.572 0.924805 19.7098 0.924805C23.4955 0.924805 26.3848 3.70215 26.3848 7.18643C26.3848 9.32855 25.3687 11.3445 23.4036 13.6148C21.4319 15.8927 18.5961 18.3257 15.1044 21.3157L15.1033 21.3166L13.6348 22.5791L12.1662 21.3166Z" stroke="#BDBDBD" stroke-width="1.5"/>
+                                </svg>
+                                <span class="shop__count">
+									24
+								</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="language">
+                        <a href="#" class="language__current">
+                            UA
+                        </a>
+                        <ul class="language__list">
+                            <li class="language__item">
+                                <a href="#" class="language__link">
+                                    UA
+                                </a>
+                            </li>
+                            <li class="language__item">
+                                <a href="#" class="language__link">
+                                    RU
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="page">
+
+    <div class="page-banner" style="background-image: url(img/banners/about.webp);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner">
+                        <img class="banner__logo" src="img/banners/logo.svg" alt="LOGO">
+                        <div class="page-title">
+                            Про нас
+                        </div>
+                        <ul class="banner-breadcrumbs">
+                            <li class="banner-breadcrumbs__item">
+                                <a href="#" class="banner-breadcrumbs__link">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="banner-breadcrumbs__item">
+                                <a href="javascript:void(0);" class="banner-breadcrumbs__link">
+                                    Про нас
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-advantages">
+        <div class="container-fluid">
+            <div class="row align-items-baseline">
+                <div class="col-md-6">
+                    <div class="section-title">
+                        KRUZHEVA.UA
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="small-title">
+                        Лідер ринку з 2017 року
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="advantages">
+                        <li class="advantages__item">
+                            <i class="advantages__icon" style="background-image: url(img/advantages/1.svg);"></i>
+                            <div class="page-description advantages__title">
+                                Якість вище цін
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <i class="advantages__icon" style="background-image: url(img/advantages/2.svg);"></i>
+                            <div class="page-description advantages__title">
+                                Сервіс з любов'ю
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <i class="advantages__icon" style="background-image: url(img/advantages/3.svg);"></i>
+                            <div class="page-description advantages__title">
+                                Швидка відправка
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-story">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="story-info description">
+                        <p>
+                            Запуск нашого магазину відбувся у 2017 році через соціальну мережу Instagram.
+                        </p>
+                        <a href="#">
+                            <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.8985 0.432861C26.3384 0.432861 27.0171 0.453513 29.1514 0.556771C31.2837 0.660029 32.7353 1.00491 34.0127 1.51707C35.3341 2.04162 36.4473 2.75203 37.5605 3.8982C38.5786 4.93056 39.3664 6.17935 39.869 7.55766C40.3635 8.87316 40.6999 10.3725 40.8 12.5719C40.8941 14.7733 40.9201 15.4734 40.9201 21.0844C40.9201 26.6955 40.9001 27.3956 40.8 29.597C40.6999 31.7964 40.3635 33.2937 39.869 34.6112C39.3678 35.9903 38.5799 37.2394 37.5605 38.2707C36.5594 39.3205 35.3487 40.133 34.0127 40.6518C32.7373 41.1619 31.2837 41.5089 29.1514 41.6121C27.0171 41.7092 26.3384 41.736 20.8985 41.736C15.4587 41.736 14.7799 41.7154 12.6456 41.6121C10.5133 41.5089 9.06178 41.1619 7.7844 40.6518C6.44761 40.1344 5.23671 39.3217 4.23658 38.2707C3.21829 37.2385 2.43049 35.9897 1.92809 34.6112C1.43155 33.2957 1.09719 31.7964 0.997083 29.597C0.902981 27.3956 0.876953 26.6955 0.876953 21.0844C0.876953 15.4734 0.896975 14.7733 0.997083 12.5719C1.09719 10.3704 1.43155 8.87523 1.92809 7.55766C2.4291 6.1785 3.21708 4.92937 4.23658 3.8982C5.237 2.84751 6.44782 2.03487 7.7844 1.51707C9.06178 1.00491 10.5113 0.660029 12.6456 0.556771C14.7799 0.459708 15.4587 0.432861 20.8985 0.432861ZM20.8985 10.7587C18.2435 10.7587 15.6972 11.8465 13.8198 13.783C11.9425 15.7195 10.8877 18.3459 10.8877 21.0844C10.8877 23.823 11.9425 26.4494 13.8198 28.3859C15.6972 30.3223 18.2435 31.4102 20.8985 31.4102C23.5536 31.4102 26.0999 30.3223 27.9772 28.3859C29.8546 26.4494 30.9093 23.823 30.9093 21.0844C30.9093 18.3459 29.8546 15.7195 27.9772 13.783C26.0999 11.8465 23.5536 10.7587 20.8985 10.7587ZM33.9126 10.2424C33.9126 9.55772 33.6489 8.90112 33.1796 8.417C32.7102 7.93289 32.0736 7.66092 31.4099 7.66092C30.7461 7.66092 30.1095 7.93289 29.6402 8.417C29.1709 8.90112 28.9072 9.55772 28.9072 10.2424C28.9072 10.927 29.1709 11.5836 29.6402 12.0677C30.1095 12.5518 30.7461 12.8238 31.4099 12.8238C32.0736 12.8238 32.7102 12.5518 33.1796 12.0677C33.6489 11.5836 33.9126 10.927 33.9126 10.2424ZM20.8985 14.889C22.4916 14.889 24.0193 15.5417 25.1458 16.7036C26.2722 17.8655 26.905 19.4413 26.905 21.0844C26.905 22.7276 26.2722 24.3034 25.1458 25.4653C24.0193 26.6272 22.4916 27.2799 20.8985 27.2799C19.3055 27.2799 17.7778 26.6272 16.6513 25.4653C15.5249 24.3034 14.8921 22.7276 14.8921 21.0844C14.8921 19.4413 15.5249 17.8655 16.6513 16.7036C17.7778 15.5417 19.3055 14.889 20.8985 14.889Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <p>
+                            За цей час нам вдалося створити сервіс на тому рівні, коли клієнт завжди задоволений – задоволений якістю мережива, ціною, упаковкою, доставкою та командою.Ми довгий час займалися пошуком хороших постачальників і ретельним відбором пропозицій від фабрик.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="story-photo story-photo-right" style="background-image: url(img/about/1.webp); margin-left: auto;"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="story-photo" style="background-image: url(img/about/2.webp);"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="story-info description" style="margin-left: auto;">
+                        <p>
+                            Тому зараз KRUZHEVA.UA за всіма категоріями залишається лідером на українському ринку.
+                            Доказом тому послужать сотні відгуків в нашому акаунті Instagram та сторінці на Prom.ua
+                        </p>
+                        <a href="#" class="button">
+                            Всі відгуки
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="story-info story-info-bottom description">
+                        <h2>
+                            Мереживо - розкіш для кожної жінки
+                        </h2>
+                        <p>
+                            Ще століття тому мережива були розкішшю, яку могли собі дозволити тільки обрані і королівські особи. Наш інтернет-магазин допомагає сучасним жінкам сьогодні виглядати по-королівськи.  
+                        </p>
+                        <p>
+                            І для нас - радість бачити, як з нашого повітряного шантильї, м'якого еластичного мережива або ажурного мережива макраме наші покупці створюють чудову нижню білизну, декорують одяг.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-examples">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="info">
+                        <div class="section-title">
+                            Приклади робіт майстринь з нашого мережива:
+                        </div>
+                        <a href="#" class="button">
+                            До каталогу
+                            <i class="button__icon" style="background-image: url(img/icons/arrow-right.svg);"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="photos">
+                        <div class="photos__left" style="background-image: url(img/about/3.webp);"></div>
+                        <div class="photos__right">
+                            <div class="photos__item" style="background-image: url(img/about/4.webp);"></div>
+                            <div class="photos__item" style="background-image: url(img/about/5.webp);"></div>
+                            <div class="photos__item" style="background-image: url(img/about/6.webp);"></div>
+                            <div class="photos__item" style="background-image: url(img/about/7.webp);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-guarantees">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="section-title">
+                        ГАРАНТІЇ
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="small-title">
+                        Чотири причини замовити<br>мереживо у нас:
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="guarantees">
+                        <li class="guarantees__item">
+                            <i class="guarantees__count">
+                                <span>1</span>
+                            </i>
+                            <div class="guarantees__content">
+                                <div class="guarantees__title">
+                                    Якість вище ціни
+                                </div>
+                                <div class="guarantees__description">
+                                    Завдяки безпосередній співпраці з фабриками - виробниками мережив, ми пропонуємо покупцеві дуже лояльні ціни
+                                </div>
+                            </div>
+                        </li>
+                        <li class="guarantees__item">
+                            <i class="guarantees__count">
+                                <span>2</span>
+                            </i>
+                            <div class="guarantees__content">
+                                <div class="guarantees__title">
+                                    Швидка доставка
+                                </div>
+                                <div class="guarantees__description">
+                                    Ми відправляємо посилки на наступний день після замовлення/оплати і відсилаємо їх по всій території України
+                                </div>
+                            </div>
+                        </li>
+                        <li class="guarantees__item">
+                            <i class="guarantees__count">
+                                <span>3</span>
+                            </i>
+                            <div class="guarantees__content">
+                                <div class="guarantees__title">
+                                    Попередні замовлення
+                                </div>
+                                <div class="guarantees__description">
+                                    Кожен клієнт може залишити у нас заявку на необхідний йому вигляд мережива, який він хотів би придбати, без внесення попередньої оплати. І ми враховуємо побажання кожного клієнта при формуванні замовлень у фабрик
+                                </div>
+                            </div>
+                        </li>
+                        <li class="guarantees__item">
+                            <i class="guarantees__count">
+                                <span>4</span>
+                            </i>
+                            <div class="guarantees__content">
+                                <div class="guarantees__title">
+                                    Сервіс з любов'ю
+                                </div>
+                                <div class="guarantees__description">
+                                    Ми щиро радіємо, бачачи, як красу наших мережив перетворюють на красу виробу. І ми можемо допомогти в цьому, надаючи на вибір в своєму магазині чудові мережива
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-none d-md-block col-md-4">
+                <div class="info">
+                    <div class="info__item">
+                        <i class="icon" style="background-image: url(img/icons/callback.svg);"></i>
+                        <b class="title">
+                            Зворотній зв’язок
+                        </b>
+                        <p class="text">
+                            Телефон:+380675116500<br>
+                            Viber, Telegram:+380675116500
+                        </p>
+                    </div>
+                    <div class="info__item">
+                        <i class="icon" style="background-image: url(img/icons/contacts.svg);"></i>
+                        <b class="title">
+                            Контакти та Е-mail
+                        </b>
+                        <p class="text">
+                            Е-mail  <a href="mailto:faretagg@gmail.com">faretagg@gmail.com</a><br>
+                            Украина, Кривий Ріг
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="logo">
+                    <a href="index.html" class="logo__link">
+                        <img src="img/footer-logo.svg" alt="LOGO" class="logo__img">
+                    </a>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-4">
+                <div class="guarantees">
+                    <i class="icon" style="background-image: url(img/icons/guarantees.svg);"></i>
+                    <b class="title">
+                        Гарантії
+                    </b>
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">
+                                Відгуки
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">
+                                Контакти
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">
+                                Політика конфіденційності
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="copy">
+                    Всі права захищено &#169; 2023 - KRUZHEVA.UA
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Подключение плагинов (скрипты) -->
+<script src="libs/jquery/jquery.min.js?v3.7.1"></script>
+<script src="js/lazyload.js"></script>
+<script src="libs/slick/slick.min.js?v1.8.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<!-- Подключение скриптов сайта -->
+<script src="js/common.js"></script>
+<script src="js/sliders.js"></script>
+
+</body>
+</html>

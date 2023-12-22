@@ -1,0 +1,105 @@
+.footer {
+  padding: 0 5em 0.625em;
+  font-family: -apple-system, "Gilroy", sans-serif;
+  background-color: #34322C;
+}
+.footer .line {
+  margin-bottom: 2.5em;
+  height: 0.0625em;
+  background-color: #636363;
+  width: 100%;
+}
+.footer .info {
+  margin-bottom: 1.75em;
+}
+.footer .info__item {
+  margin-bottom: 0.9375em;
+  position: relative;
+  padding-left: 2.75em;
+}
+.footer .info__item:last-child {
+  margin-bottom: 0;
+}
+.footer .icon {
+  width: 1.5em;
+  height: 1.5em;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer .title {
+  font-size: 1.25em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+  display: block;
+  text-transform: uppercase;
+}
+.footer .text {
+  line-height: 1.5em;
+}
+.footer .text a {
+  color: #E6A961;
+  text-decoration: none;
+}
+.footer .text a:hover {
+  text-decoration: underline;
+}
+.footer .logo {
+  margin-bottom: 1.75em;
+}
+.footer .logo__link {
+  display: block;
+  width: 9.5625em;
+  margin: 1.875em auto 0;
+}
+.footer .logo__img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+.footer .guarantees {
+  position: relative;
+  padding-left: 2.75em;
+  margin: 0 2.5em 1.75em auto;
+  width: 16.5em;
+}
+.footer .list__item {
+  display: block;
+  padding-left: 1.5em;
+  position: relative;
+}
+.footer .list__item::before {
+  content: "";
+  display: block;
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 0.375em;
+  -webkit-border-radius: 0.375em;
+  background-color: #fff;
+  position: absolute;
+  left: 0.6em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+}
+.footer .list__link {
+  text-decoration: none;
+  line-height: 1.125em;
+}
+.footer .list__link:hover {
+  text-decoration: underline;
+}
+.footer .copy {
+  border-top: 0.0625em solid #636363;
+  padding-top: 0.6875em;
+  font-size: 0.8125em;
+  line-height: 1.2;
+  font-family: -apple-system, "Roboto", sans-serif;
+  width: 100%;
+  text-align: center;
+}

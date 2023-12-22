@@ -1,0 +1,425 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  font-size: inherit;
+  line-height: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  font-family: -apple-system, "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  min-width: 320px;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #34322C;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body::before {
+  content: "";
+  background-image: url(../img/patterns/pc/left.png);
+  width: 14.75em;
+  height: 34.375em;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  -webkit-background-size: contain;
+  background-size: contain;
+  z-index: 1;
+}
+body::after {
+  content: "";
+  background-image: url(../img/patterns/pc/right.png);
+  width: 36.25em;
+  height: 22.75em;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: fixed;
+  top: 0;
+  right: 0;
+  -webkit-background-size: contain;
+  background-size: contain;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  z-index: 3;
+}
+
+.page {
+  flex: 1 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+footer {
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.button {
+  background-color: #FFB806;
+  font-family: -apple-system, "Gilroy", sans-serif;
+  text-decoration: none;
+  color: #333333;
+  border: none;
+  font-size: 1.125em;
+  padding: 0;
+  height: 2.8125em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ba943e 0%, #ecac20 20%, #ba943e 39%, #f9f4b4 50%, #ba943e 60%, #ecac20 80%, #ba943e 100%);
+  -webkit-background-clip: content-box;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite;
+  background-size: 200%;
+  background-position: left;
+  z-index: -1;
+}
+.button:hover {
+  background-color: transparent;
+  font-size: 1.125em;
+  font-family: -apple-system, "Gilroy", sans-serif;
+}
+.button:active {
+  background: #DD910A;
+  font-size: 1.125em;
+  font-family: -apple-system, "Gilroy", sans-serif;
+}
+.button:focus {
+  font-size: 1.125em;
+  font-family: -apple-system, "Gilroy", sans-serif;
+}
+.button__icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 1.625em;
+  height: 0.8em;
+  margin-left: 0.9375em;
+}
+
+input {
+  display: block;
+  background-color: #3B3933;
+  border: none;
+  border-bottom: 0.0625em solid #DEDEDE;
+  padding: 1.25em 0 0.625em;
+  text-align: center;
+  width: 100%;
+  font-family: -apple-system, "Gilroy", sans-serif;
+  color: #ffffff;
+}
+input::placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+input:focus {
+  font-family: -apple-system, "Gilroy", sans-serif;
+}
+input:active {
+  font-family: -apple-system, "Gilroy", sans-serif;
+}
+
+.section-title {
+  font-size: 3.4375em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  color: #fff;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+}
+
+.page-title {
+  font-size: 3.75em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  color: #fff;
+  line-height: 1.5em;
+  font-weight: 600;
+  display: block;
+}
+
+.page-description {
+  font-family: -apple-system, "Gilroy", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color: #ffffff;
+  display: block;
+}
+
+.normal-title {
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  font-size: 2.1875em;
+  line-height: 1.2em;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+  display: block;
+}
+
+.small-title {
+  font-family: -apple-system, "Gilroy", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+}
+
+.small-description {
+  font-family: -apple-system, "Gilroy", sans-serif;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+
+.small-list li {
+  position: relative;
+  padding-left: 1.25em;
+  display: block;
+  line-height: 1.5;
+}
+.small-list li::before {
+  content: "";
+  width: 0.5625em;
+  height: 0.5625em;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0.4em;
+  background-color: #ffffff;
+}
+
+.newitems {
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+}
+.newitems__item .product {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.newitems__item .product:hover {
+  filter: none;
+}
+
+.slick-slider .slick-arrow {
+  width: 2.3125em;
+  height: 2.3125em;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-image: url(../img/icons/arrow-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 0.625em auto;
+  background-size: 0.625em auto;
+  background-color: #5B5A55;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.15625em;
+  color: transparent;
+  z-index: 3;
+  cursor: pointer;
+}
+.slick-slider .slick-prev {
+  left: 0;
+}
+.slick-slider .slick-next {
+  right: 0;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+}
+.slick-slider .slick-dots {
+  margin-top: 1.25em;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.slick-slider .slick-dots li {
+  margin-right: 2.0625em;
+  display: inline-flex;
+}
+.slick-slider .slick-dots li button {
+  display: block;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: transparent;
+  border: none;
+  background-color: #5B5A55;
+  cursor: pointer;
+}
+.slick-slider .slick-dots li:last-child {
+  margin-right: 0;
+}
+.slick-slider .slick-dots li.slick-active button {
+  background-color: #FFB806;
+}
+
+.description {
+  font-family: -apple-system, "Gilroy", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color: #ffffff;
+  display: block;
+  text-align: justify;
+}
+.description h1 {
+  font-size: 2.5em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  color: #fff;
+  line-height: 1.5em;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5833333333em;
+  text-align: justify;
+}
+.description h2 {
+  font-size: 2.2916666667em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5833333333em;
+  text-align: justify;
+}
+.description h3 {
+  font-size: 2.0833333333em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5833333333em;
+  text-align: justify;
+}
+.description h4 {
+  font-size: 1.875em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5833333333em;
+  text-align: justify;
+}
+.description h5 {
+  font-size: 1.4583333333em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5833333333em;
+  text-align: justify;
+}
+.description h6 {
+  font-size: 1.0416666667em;
+  font-family: -apple-system, "Palatino Linotype", sans-serif;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5833333333em;
+  text-align: justify;
+}
+.description p {
+  margin-bottom: 0.5833333333em;
+  text-align: justify;
+}
+.description b, .description strong {
+  font-weight: 700;
+  text-align: justify;
+}
+.description i {
+  font-style: italic;
+  text-align: justify;
+}
+.description ul {
+  margin-bottom: 0.5833333333em;
+}
+.description ul li {
+  position: relative;
+  padding-left: 0.8333333333em;
+  text-align: justify;
+}
+.description ul li::before {
+  content: "";
+  display: block;
+  width: 0.375em;
+  height: 0.375em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0.4583333333em;
+}
+.description ol {
+  margin-bottom: 0.5833333333em;
+  list-style: decimal;
+  margin-left: 1.0416666667em;
+}
+.description ol li {
+  text-align: justify;
+}
+
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
